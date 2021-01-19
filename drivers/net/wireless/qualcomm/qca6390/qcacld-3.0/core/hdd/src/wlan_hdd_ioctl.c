@@ -8269,7 +8269,6 @@ static const struct hdd_drv_cmd hdd_drv_cmds[] = {
 	{"SETANTENNAMODE",            drv_cmd_set_antenna_mode, true},
 	{"GETANTENNAMODE",            drv_cmd_get_antenna_mode, false},
 #ifdef CONFIG_SEC
-	{"P2P_ECSA",                  drv_cmd_set_channel_switch, true},
 	{"SET_INDOOR_CHANNELS",       drv_cmd_set_disable_chan_list, true},
 	{"GET_INDOOR_CHANNELS",       drv_cmd_get_disable_chan_list, false},
 #else /* !CONFIG_SEC */
