@@ -1,7 +1,7 @@
 /dts-v1/;
 
 / {
-	model = "Samsung R8Q EUR PROJECT - R8 PV2 (board-id,06)";
+	model = "Samsung R8Q USA PROJECT - R8 PV2 (board-id,06)";
 	compatible = "qcom,kona-mtp", "qcom,kona", "qcom,mtp";
 	qcom,board-id = <0x8 0x6>;
 	dtbo-version = <0x0>;
@@ -12087,7 +12087,7 @@
 					interrupts = <0x6f 0x0>;
 					a96t3x6,irq_gpio = <0xffffffff 0x6f 0x0>;
 					a96t3x6,dvdd_vreg_name = "pm8150_l13";
-					a96t3x6,fw_path = "a96t356_r8q_all.bin";
+					a96t3x6,fw_path = "a96t356_r8q_usa.bin";
 					a96t3x6,firmup_cmd = <0x3b>;
 					phandle = <0x188>;
 				};
@@ -12632,28 +12632,6 @@
 		};
 	};
 
-	fragment@219 {
-		target = <0xffffffff>;
-
-		__overlay__ {
-
-			i2c@22 {
-
-				mfc-charger@3b {
-
-					fod_list {
-						count = <0x1>;
-
-						pad_0x00 {
-							cc = <0x96 0x3f 0x8e 0x34 0x96 0x22 0x96 0x18 0x9b 0x3 0x9c 0x0>;
-							cv = <0x96 0x5d 0x8e 0x52 0x96 0x40 0x96 0x36 0x9b 0x21 0x9c 0x1e>;
-						};
-					};
-				};
-			};
-		};
-	};
-
 	__symbols__ {
 		pm8150_tz = "/fragment@0/__overlay__/qcom,pm8150@0/qcom,temp-alarm@2400";
 		pm8150_clkdiv = "/fragment@0/__overlay__/qcom,pm8150@0/clock-controller@5b00";
@@ -13060,7 +13038,7 @@
 		thermal_zones = "/fragment@1:target:0", "/fragment@3:target:0", "/fragment@5:target:0", "/fragment@45:target:0", "/fragment@57:target:0", "/fragment@132:target:0";
 		usb2_phy0 = "/fragment@2/__overlay__/qcom,pm8150b@2/qcom,qpnp-smb5:dpdm-supply:0", "/fragment@167:target:0";
 		pm8150_l2 = "/fragment@2/__overlay__/qcom,pm8150b@2/qcom,usb-pdphy@1700:vdd-pdphy-supply:0", "/fragment@150/__overlay__:aux-pullup-supply:0";
-		soc = "/fragment@8:target:0", "/fragment@34:target:0", "/fragment@43:target:0", "/fragment@52:target:0", "/fragment@62:target:0", "/fragment@81:target:0", "/fragment@95:target:0", "/fragment@97:target:0", "/fragment@98:target:0", "/fragment@99:target:0", "/fragment@131:target:0", "/fragment@133:target:0", "/fragment@139:target:0", "/fragment@144:target:0", "/fragment@147:target:0", "/fragment@158:target:0", "/fragment@159:target:0", "/fragment@162:target:0", "/fragment@169:target:0", "/fragment@172:target:0", "/fragment@173:target:0", "/fragment@178:target:0", "/fragment@179:target:0", "/fragment@186:target:0", "/fragment@192:target:0", "/fragment@193:target:0", "/fragment@203:target:0", "/fragment@204:target:0", "/fragment@206:target:0", "/fragment@211:target:0", "/fragment@214:target:0", "/fragment@216:target:0", "/fragment@218:target:0", "/fragment@219:target:0";
+		soc = "/fragment@8:target:0", "/fragment@34:target:0", "/fragment@43:target:0", "/fragment@52:target:0", "/fragment@62:target:0", "/fragment@81:target:0", "/fragment@95:target:0", "/fragment@97:target:0", "/fragment@98:target:0", "/fragment@99:target:0", "/fragment@131:target:0", "/fragment@133:target:0", "/fragment@139:target:0", "/fragment@144:target:0", "/fragment@147:target:0", "/fragment@158:target:0", "/fragment@159:target:0", "/fragment@162:target:0", "/fragment@169:target:0", "/fragment@172:target:0", "/fragment@173:target:0", "/fragment@178:target:0", "/fragment@179:target:0", "/fragment@186:target:0", "/fragment@192:target:0", "/fragment@193:target:0", "/fragment@203:target:0", "/fragment@204:target:0", "/fragment@206:target:0", "/fragment@211:target:0", "/fragment@214:target:0", "/fragment@216:target:0", "/fragment@218:target:0";
 		usb0 = "/fragment@9:target:0", "/fragment@94:target:0", "/fragment@164:target:0", "/fragment@166:target:0";
 		eud = "/fragment@9/__overlay__:extcon:4", "/fragment@94/__overlay__:extcon:0";
 		sde_dp = "/fragment@10:target:0", "/fragment@35:target:0", "/fragment@36/__overlay__:connectors:0", "/fragment@150:target:0";

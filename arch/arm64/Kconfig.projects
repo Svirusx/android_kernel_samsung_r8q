@@ -4,9 +4,9 @@ config SEC_R8Q_PROJECT
 	help
 	  Support for Samsung R8Q Project
 
-config MACH_R8Q_EUR_OPEN
+config MACH_R8Q_USA_SINGLE
 	default n
-	bool "Samsung R8Q EUR OPEN"
+	bool "Samsung R8Q USA SQ"
 	help
-	  Support for Samsung R8Q EUR OPEN device.
+	  Support for Samsung R8Q USA SQ device.
 
