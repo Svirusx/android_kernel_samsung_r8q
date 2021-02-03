@@ -1525,7 +1525,7 @@ static void samsung_panel_init(struct samsung_display_driver_data *vdd)
 	/* SAMSUNG_FINGERPRINT */
 	vdd->panel_hbm_entry_delay = 1;
 	vdd->panel_hbm_entry_after_te = 0;
-	vdd->panel_hbm_exit_delay = 2;
+	vdd->panel_hbm_exit_delay = 1;
 
 	/* Gamma compensation (Gamma Offset) */
 	vdd->panel_func.samsung_gm2_gamma_comp_init = ss_gm2_gamma_comp_init;
