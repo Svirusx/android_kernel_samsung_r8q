@@ -4649,7 +4649,7 @@ enum {
 	Opt_shortname_win95,
 	Opt_shortname_winnt,
 	Opt_shortname_mixed,
-#endif /* CONFIG_SDFAT_USE_FOR_VFAT */fv
+#endif /* CONFIG_SDFAT_USE_FOR_VFAT */
 };
 
 static const match_table_t sdfat_tokens = {
